@@ -1,0 +1,153 @@
+
+#header{
+  position: fixed;
+  width:100%;
+  background-color: rgba(255, 238, 204, 0.448);
+  top:0;
+  left:0;
+  z-index: 999;
+}
+
+#hero{
+  background-color: #FFEECC;
+  margin-top: 55.98px;
+}
+
+
+/* about */
+.title {
+  color: rgb(94, 92, 92);
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+.title::before,
+.title::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  background: #aaa;
+  width: calc(50% - 100px);
+  height: 1px;
+}
+
+.title:before {
+  left: 0%; 
+}
+.title:after {
+  right:0%;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+p.fst-italic.py-3 {
+  text-align:justify;
+}
+
+.profile-photo{
+  text-align: center;
+  height: 100%;
+}
+
+/* resume */
+.resume-title{
+  color: rgb(94, 92, 92);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume-item{
+  padding-left: 20px;
+  border-left: #aaa solid 2px;
+  position: relative;
+}
+
+.resume-item > h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resume-item > h5{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.resume-item::before{
+  content: "";
+  position: absolute;
+  background: #aaa;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  left:-6px;
+}
+
+.bullet-points{
+  font-size: 15px;
+}
+
+/* card */
+
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding:20px;
+
+}
+
+.pic{
+  height:200px;
+}
+.card-img-top{
+  display: flex;
+  align-items: center;
+  height:100%;
+  object-fit: cover;
+}
+
+.card-body{
+  text-align:justify;
+}
+/* skills */
+.skillbar {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 3px; /* Add top padding */
+  padding-bottom: 3px; /* Add bottom padding */
+  padding-right: 5px;
+  color: rgb(94, 92, 92);
+}
+
+.skillset{
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.html {width: 90%; background-color: #FFEECC;} 
+.python {width: 80%; background-color: #FFDDCC;} 
+.sql {width: 80%; background-color:#FFCCCC;} 
+.r {width: 60%; background-color: #FEBBCC;} 
+.problem {width: 90%; background-color: #FFEECC;} 
+.slidewriting {width: 90%; background-color: #FFDDCC;} 
+.adaptability {width: 90%; background-color: #FFCCCC;} 
+.teamwork {width: 90%; background-color: #FEBBCC;} 
+
+p.text-center{
+  margin-top: 16px;
+}
